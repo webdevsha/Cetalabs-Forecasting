@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { BarChart3, Layers, CheckCircle2, Database, Moon, Sun } from "lucide-react";
-import InteractiveModelTab from "./InteractiveModelTab";
+import ScenarioBuilder from "./ScenarioBuilder";
 import ScenarioSimulatorTab from "./ScenarioSimulatorTab";
 import ValidationTab from "./ValidationTab";
 import DataProvenanceTab from "./DataProvenanceTab";
@@ -71,11 +71,11 @@ export default function Dashboard() {
             <div className="max-w-7xl">
               <h2 className="text-2xl font-semibold mb-2">Interactive Forecasting Model</h2>
               <p className="text-muted-foreground mb-6">
-                Adjust policy parameters to see real-time impact on global AI compute capacity forecasts. 
-                This model demonstrates how supply-side constraints shape AI development timelines.
+                Adjust policy parameters and toggle future events to see real-time impact on global AI compute capacity forecasts. 
+                Combine socioeconomic factors with specific policy events to build custom scenarios.
               </p>
             </div>
-            <InteractiveModelTab />
+            <ScenarioBuilder />
           </TabsContent>
 
           <TabsContent value="scenarios">
